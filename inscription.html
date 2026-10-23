@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription – Le Sprint du Mans</title>
+  <meta name="description" content="Le Sprint du Mans : course de karting amateur au Mans le samedi 5 juin 2027. Site réalisé par Lucas Lacroix, M2 STAPS MOS, Université Paris Nanterre.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="entete">
+    <div class="conteneur entete-contenu">
+      <a class="logo" href="index.html"><span class="logo-drapeau" aria-hidden="true"></span>Le Sprint <strong>du Mans</strong></a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-bouton" aria-label="Ouvrir ou fermer le menu"><span></span><span></span><span></span></label>
+      <nav class="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="evenement.html">L'événement</a></li>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+          <li><a href="inscription.html" class="actif" aria-current="page">Inscription</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="bandeau bandeau-depart ">
+      <div class="conteneur bandeau-contenu">
+        <h1>Inscription</h1>
+        <p>Réservez votre place pour le Sprint du Mans</p>
+      </div>
+    </section>
+    <section class="section conteneur">
+      <div class="deux-colonnes colonnes-formulaire">
+        <form class="formulaire" action="#" method="post">
+          <h2>Formulaire d'inscription</h2>
+          <p class="petit">Les champs marqués d'un * sont obligatoires.</p>
+
+          <div class="champ-double">
+            <div class="champ">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="champ">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" required>
+            </div>
+          </div>
+
+          <div class="champ-double">
+            <div class="champ">
+              <label for="email">Adresse e-mail *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="champ">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone">
+            </div>
+          </div>
+
+          <div class="champ-double">
+            <div class="champ">
+              <label for="naissance">Date de naissance *</label>
+              <input type="date" id="naissance" name="naissance" required>
+            </div>
+            <div class="champ">
+              <label for="niveau">Niveau *</label>
+              <select id="niveau" name="niveau" required>
+                <option value="">Choisissez votre niveau</option>
+                <option value="debutant">Débutant (première course)</option>
+                <option value="occasionnel">Occasionnel</option>
+                <option value="confirme">Confirmé</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="champ">
+            <legend>Courses souhaitées *</legend>
+            <label class="case"><input type="checkbox" name="courses" value="sprint" checked> Le Sprint du Mans – 5 juin 2027</label>
+            <label class="case"><input type="checkbox" name="courses" value="endurance"> L'Endurance du Mans – 12 juin 2027</label>
+            <label class="case"><input type="checkbox" name="courses" value="finale"> La Grande Finale – 19 juin 2027</label>
+          </fieldset>
+
+          <div class="champ">
+            <label for="message">Message ou question</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+
+          <label class="case"><input type="checkbox" name="reglement" required> J'accepte le règlement de la course et je certifie avoir au moins 14 ans *</label>
+
+          <button type="submit" class="bouton">Envoyer mon inscription</button>
+        </form>
+
+        <aside class="carte carte-accent">
+          <h3>Récapitulatif</h3>
+          <ul class="liste-infos">
+            <li><span>Date</span> Samedi 5 juin 2027</li>
+            <li><span>Heure</span> 14 h (accueil à 13 h)</li>
+            <li><span>Lieu</span> Circuit de karting du Mans</li>
+            <li><span>Tarif</span> 50 € par course</li>
+          </ul>
+          <p>Le paiement se fait sur place le jour de la course. Une confirmation vous est envoyée par e-mail sous 48 heures.</p>
+          <p><a href="infos-pratiques.html">Consulter les infos pratiques</a></p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <p><strong>Le Sprint du Mans</strong> · Samedi 5 juin 2027 · 14 h · Circuit de karting du Mans</p>
+      <p>Site réalisé par Lucas Lacroix – M2 STAPS Management des Organisations Sportives, Université Paris Nanterre – Projet n°3</p>
+      <p class="petit">Événement et organisateur fictifs, créés pour un projet universitaire · Photos libres de droit : Pexels</p>
+    </div>
+  </footer>
+</body>
+</html>
